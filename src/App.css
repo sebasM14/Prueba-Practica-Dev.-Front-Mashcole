@@ -36,7 +36,7 @@ body {
 
 /* LOGO */
 .header__logo img {
-  height: 130px;
+  height: 140px;
   width: auto;
   display: block;
 }
@@ -238,40 +238,54 @@ body {
 .btn.primary {
   background: #fff;
   color: #0a2e52;
-  padding: 14px 32px;
-  font-size: 14px;
+  padding: 12px 26px;
+  font-size: 13px;
   font-weight: 700;
   border-radius: 6px;
   text-transform: uppercase;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.8px;
+  border: 2px solid #fff;
+}
+
+.btn.primary:hover {
+  background: #f0f0f0;
 }
 
 .btn.outline {
   background: transparent;
   border: 2px solid #fff;
   color: #fff;
-  padding: 14px 32px;
-  font-size: 14px;
-  font-weight: 700;
-  border-radius: 6px;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-}
-
-.btn.outline:hover {
-  background: rgba(255, 255, 255, 0.1);
-}
-
-.btn.small {
-  margin-top: 16px;
-  background: #fff;
-  color: #0a2e52;
-  padding: 12px 24px;
+  padding: 12px 26px;
   font-size: 13px;
   font-weight: 700;
   border-radius: 6px;
   text-transform: uppercase;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.8px;
+}
+
+.btn.outline:hover {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: #fff;
+}
+
+.btn.small {
+  margin-top: 0;
+  background: #fff;
+  color: #0a2e52;
+  padding: 12px 24px;
+  font-size: 12px;
+  font-weight: 700;
+  border-radius: 6px;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  border: none;
+  transition: all 0.3s ease;
+  align-self: flex-end;
+}
+
+.btn.small:hover {
+  background: #e8e8e8;
+  transform: translateY(-1px);
 }
 
 /* SIDE CARDS */
@@ -285,12 +299,12 @@ body {
 
 .side-card {
   border-radius: 16px;
-  padding: 32px 24px;
+  padding: 40px 32px 32px 32px;
   color: #fff;
   flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .side-card.blue {
@@ -302,13 +316,16 @@ body {
 }
 
 .side-card h3 {
-  font-size: 22px;
-  margin-bottom: 15px;
+  font-size: 24px;
+  margin-bottom: 16px;
+  line-height: 1.3;
 }
 
 .side-card p {
   opacity: 0.9;
-  line-height: 1.5;
+  line-height: 1.6;
+  margin-bottom: 24px;
+  font-size: 15px;
 }
 
 /* ===============================
@@ -643,6 +660,228 @@ body {
 }
 
 /* ===============================
+   BENEFITS SECTION
+================================ */
+.benefits-section {
+  margin: 80px 0;
+  padding: 60px 0;
+  background: #f8fafc;
+}
+
+.benefits-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: start;
+}
+
+.benefits-text h2 {
+  font-size: 48px;
+  color: #0a2e52;
+  line-height: 1.2;
+  margin-bottom: 30px;
+}
+
+.benefits-text .highlight {
+  color: #0b5ed7;
+}
+
+.benefits-text > p {
+  color: #4a5568;
+  line-height: 1.8;
+  margin-bottom: 40px;
+}
+
+.service-highlight {
+  background: #e8f1ff;
+  padding: 30px;
+  border-radius: 12px;
+}
+
+.service-highlight h3 {
+  font-size: 20px;
+  color: #1a2848;
+  margin-bottom: 10px;
+}
+
+.service-highlight p {
+  color: #4a5568;
+  font-size: 16px;
+}
+
+.service-highlight strong {
+  color: #0a2e52;
+  font-weight: 600;
+}
+
+.benefits-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.benefit-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0;
+  border-bottom: 2px solid #e2e8f0;
+  font-size: 24px;
+  color: #0a2e52;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.benefit-item:hover {
+  padding-left: 10px;
+  color: #0b5ed7;
+}
+
+.benefit-item .arrow {
+  font-size: 28px;
+  transition: transform 0.3s ease;
+}
+
+.benefit-item:hover .arrow {
+  transform: translate(5px, -5px);
+}
+
+/* ===============================
+   BLOGS SECTION
+================================ */
+.blogs-section {
+  margin: 80px 0;
+}
+
+.blogs-header {
+  max-width: 600px;
+  margin-bottom: 50px;
+}
+
+.blogs-header h2 {
+  font-size: 32px;
+  color: #0a2e52;
+  margin-bottom: 20px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.blogs-header p {
+  color: #4a5568;
+  line-height: 1.7;
+  margin-bottom: 25px;
+}
+
+.btn-dark {
+  background: #1e3a8a;
+  color: white;
+  padding: 12px 28px;
+  border: none;
+  border-radius: 6px;
+  font-weight: 700;
+  cursor: pointer;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+}
+
+.btn-dark:hover {
+  background: #1e40af;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(30, 58, 138, 0.3);
+}
+
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.blog-card {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  height: 320px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.blog-card:hover {
+  transform: translateY(-5px);
+}
+
+.blog-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.blog-card:hover img {
+  transform: scale(1.05);
+}
+
+.blog-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(30, 58, 138, 0.95), transparent);
+  padding: 40px 25px 25px;
+  color: white;
+}
+
+.blog-overlay h3 {
+  font-size: 18px;
+  line-height: 1.4;
+  font-weight: 600;
+}
+
+/* ===============================
+   CTA SECTION
+================================ */
+.cta-section {
+  margin: 80px 0;
+  padding: 80px 60px;
+  background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+  border-radius: 20px;
+  text-align: center;
+}
+
+.cta-content h2 {
+  font-size: 42px;
+  color: white;
+  margin-bottom: 15px;
+  line-height: 1.3;
+  font-weight: 700;
+}
+
+.cta-content p {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 18px;
+  margin-bottom: 35px;
+}
+
+.btn-cta {
+  background: white;
+  color: #1e40af;
+  padding: 18px 40px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+}
+
+.btn-cta:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* ===============================
    FOOTER
 ================================ */
 .footer {
@@ -816,6 +1055,16 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 20px;
   }
+  
+  .benefits-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  
+  .blog-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -862,6 +1111,24 @@ body {
     flex-direction: column;
   }
   
+  .side-card {
+    padding: 32px 24px;
+  }
+  
+  .side-card h3 {
+    font-size: 20px;
+  }
+  
+  .side-card p {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  
+  .btn.small {
+    padding: 10px 20px;
+    font-size: 11px;
+  }
+  
   .hero-card {
     height: 400px;
   }
@@ -872,6 +1139,16 @@ body {
   
   .hero-overlay h1 {
     font-size: 32px;
+  }
+  
+  .hero-buttons {
+    gap: 12px;
+  }
+  
+  .btn.primary,
+  .btn.outline {
+    padding: 10px 20px;
+    font-size: 12px;
   }
   
   .footer-container {
@@ -910,6 +1187,31 @@ body {
   .rental-cards {
     grid-template-columns: 1fr;
   }
+  
+  .benefits-text h2 {
+    font-size: 32px;
+  }
+  
+  .benefit-item {
+    font-size: 20px;
+    padding: 25px 0;
+  }
+  
+  .blog-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .blog-card {
+    height: 280px;
+  }
+  
+  .cta-content h2 {
+    font-size: 28px;
+  }
+  
+  .cta-section {
+    padding: 50px 30px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -923,6 +1225,26 @@ body {
   
   .hero-overlay p {
     font-size: 14px;
+  }
+  
+  .btn.primary,
+  .btn.outline {
+    padding: 9px 18px;
+    font-size: 11px;
+    width: 100%;
+    max-width: 200px;
+  }
+  
+  .btn.small {
+    padding: 8px 16px;
+    font-size: 11px;
+    width: auto;
+    min-width: 160px;
+  }
+  
+  .hero-buttons {
+    gap: 10px;
+    justify-content: center;
   }
   
   .btn {
@@ -955,5 +1277,27 @@ body {
   .featured-header h2,
   .stats-section h2 {
     font-size: 24px;
+  }
+  
+  .benefits-text h2 {
+    font-size: 26px;
+  }
+  
+  .benefit-item {
+    font-size: 18px;
+    padding: 20px 0;
+  }
+  
+  .blogs-header h2 {
+    font-size: 24px;
+  }
+  
+  .cta-content h2 {
+    font-size: 24px;
+  }
+  
+  .btn-cta {
+    padding: 15px 30px;
+    font-size: 12px;
   }
 }

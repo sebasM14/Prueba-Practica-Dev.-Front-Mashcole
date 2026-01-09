@@ -189,6 +189,55 @@ export default function Body() {
         </div>
       </section>
 
+      {/* BENEFITS SECTION */}
+<section className="benefits-section">
+  <div className="benefits-content">
+    <div className="benefits-text">
+      <h2>
+        The <span className="highlight">benefits</span> of our<br />
+        Property management<br />
+        services
+      </h2>
+      <p>
+        Mashcole Property Management, Inc. operates within standards
+        of excellence that guarantee successful management of multi-
+        family operations. These principles have been entitled S.P.A.R.C. ™
+        and are defined as:
+      </p>
+      <div className="service-highlight">
+        <h3>Personal, one on one service</h3>
+        <p>For <strong>Owners</strong> or <strong>Renters</strong></p>
+      </div>
     </div>
+    
+    <div className="benefits-list">
+      <div className="benefit-item">
+        <span>Staff</span>
+        <span className="arrow">↗</span>
+      </div>
+      <div className="benefit-item">
+        <span>Pricing</span>
+        <span className="arrow">↗</span>
+      </div>
+      <div className="benefit-item">
+        <span>Advertising</span>
+        <span className="arrow">↗</span>
+      </div>
+      <div className="benefit-item">
+        <span>Rent Ready Units</span>
+        <span className="arrow">↗</span>
+      </div>
+      <div className="benefit-item">
+        <span>Curb appeal</span>
+        <span className="arrow">↗</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+    </div>
+
+
+
   );
 }
