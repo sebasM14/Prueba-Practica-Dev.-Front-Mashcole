@@ -3,24 +3,22 @@ import { Routes, Route, Navigate } from 'react-router-dom';
 
 // Importa los componentes que SÍ tienes
 import Header from '../app/private/Components/Header';
+import Body from '../app/private/Components/Body';
 import Footer from '../app/private/Components/Footer';
 
 export const RuteoPrincipal = () => {
   return (
     <Routes>
       {/* Ruta principal - muestra Header + Contenido + Footer */}
-      <Route path="/" element={<Navigate to="/home" replace />} />
+      <Route path="/" element={<Navigate to="/dash" replace />} />
       
-      {/* Página Home */}
+      {/* Página completa con Header + Body + Footer */}
       <Route 
         path="/dash" 
         element={
           <>
             <Header />
-            <div style={{ padding: '2rem', minHeight: '70vh' }}>
-              <h1>Página Principal</h1>
-              <p>Contenido de tu sitio web aquí...</p>
-            </div>
+            <Body />
             <Footer />
           </>
         } 
@@ -28,6 +26,9 @@ export const RuteoPrincipal = () => {
       
       {/* Para ver solo el Header */}
       <Route path="/header" element={<Header />} />
+
+      {/* Para ver solo el Body */}
+      <Route path="/body" element={<Body />} />
       
       {/* Para ver solo el Footer */}
       <Route path="/footer" element={<Footer />} />
