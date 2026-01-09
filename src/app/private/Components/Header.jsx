@@ -1,9 +1,9 @@
-
 export default function Header() {
   return (
     <header className="header">
       <div className="header__logo">
-        <img src="../../assets/images/logo.png" alt="Mashcole Property Management" />
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStH2ydTOrNsyDIqTv_EztmmyhYO43Yt3hlig&s"/>
+    
       </div>
 
       <nav className="header__nav">
@@ -18,6 +18,7 @@ export default function Header() {
             <a>Newsletters</a>
           </div>
         </div>
+
         <a className="nav-item">For Rent</a>
         <a className="nav-item">Residents</a>
         <a className="nav-item">Owners</a>
@@ -33,5 +34,5 @@ export default function Header() {
         <button className="btn btn-blue">(818) 888-8052</button>
       </div>
     </header>
-  )
+  );
 }

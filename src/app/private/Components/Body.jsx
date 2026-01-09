@@ -1,13 +1,8 @@
-
-
 export default function Body() {
   return (
     <div className="body-container">
 
-      {/* TOP SECTION */}
       <section className="top-section">
-
-        {/* HERO */}
         <div className="hero-card">
           <div className="hero-overlay">
             <span className="hero-tag">
@@ -30,7 +25,6 @@ export default function Body() {
           </div>
         </div>
 
-        {/* SIDE CARDS */}
         <div className="side-cards">
           <div className="side-card blue">
             <h3>Request A Property Management Quote</h3>
@@ -50,38 +44,32 @@ export default function Body() {
             <button className="btn small">REQUEST A TOUR</button>
           </div>
         </div>
-
       </section>
 
-      {/* BOTTOM SECTION */}
       <section className="bottom-section">
-
         <div className="office-card">
-          <h3>Offices in California</h3>
+          <h3>Offices In California</h3>
           <p>📍 26901 Agoura Road, Suite 250, Calabasas, CA 91301</p>
           <p>📍 3846 E Anaheim St, Long Beach, CA 90804</p>
           <p>📞 (818) 888-8052</p>
         </div>
 
         <div className="rentals-card">
-          <div className="rentals-info">
+          <div className="rentals-content">
             <h3>Find Rentals</h3>
             <p>
               With more than 7000 units available in the Greater Los Angeles area,
               we can help you find the right one for you.
             </p>
-            <button className="btn white">
-              SEE ALL RENTAL LISTINGS
-            </button>
+            <button className="btn white">SEE ALL RENTAL LISTINGS</button>
           </div>
 
           <div className="rentals-images">
-            <img src="https://picsum.photos/300/200?1" alt="Rental" />
-            <img src="https://picsum.photos/300/200?2" alt="Rental" />
-            <img src="https://picsum.photos/300/200?3" alt="Rental" />
+            <img src="https://www.mashcole.com/images/about/office.jpg" />
+            <img src="https://www.mashcole.com/Pictures/large/Bcode/717-01.jpg" />
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGT602CEVMNqf6UIPb7_-RGZ7t8CyfDzQVgA&s" />
           </div>
         </div>
-
       </section>
 
     </div>
