@@ -101,3 +101,79 @@
   background: #0b5ed7;
   color: white;
 }
+
+
+
+/* BODY */
+
+
+.footer {
+  width: 100%;
+  background: #0e1621;
+  color: white;
+  min-height: 565px;
+  padding: 80px 100px 40px;
+  box-sizing: border-box;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 60px;
+}
+
+.footer h4 {
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.footer p, .footer a {
+  color: #b0b8c4;
+  margin-bottom: 10px;
+  display: block;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.newsletter-box {
+  display: flex;
+  margin-top: 15px;
+}
+
+.newsletter-box input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  outline: none;
+}
+
+.newsletter-box button {
+  padding: 10px 20px;
+  background: #1b6cff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.certificates {
+  margin-top: 25px;
+  display: flex;
+  gap: 15px;
+}
+
+.certificates span {
+  padding: 8px 14px;
+  border: 1px solid white;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+.footer-bottom {
+  margin-top: 60px;
+  padding-top: 25px;
+  border-top: 1px solid rgba(255,255,255,0.2);
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  color: #9aa3af;
+}
