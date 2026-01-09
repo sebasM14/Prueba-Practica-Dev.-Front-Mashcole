@@ -1,15 +1,35 @@
+import { useState } from "react";
+
 export default function Header() {
+  const [menuOpen, setMenuOpen] = useState(false);
+  const [dropdownOpen, setDropdownOpen] = useState(false);
+
   return (
     <header className="header">
       <div className="header__logo">
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStH2ydTOrNsyDIqTv_EztmmyhYO43Yt3hlig&s"/>
-    
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStH2ydTOrNsyDIqTv_EztmmyhYO43Yt3hlig&s" />
       </div>
 
-      <nav className="header__nav">
-        <div className="nav-item dropdown">
+      {/* HAMBURGER */}
+      <button
+        className={`menu-toggle ${menuOpen ? "open" : ""}`}
+        onClick={() => setMenuOpen(!menuOpen)}
+        aria-label="Toggle menu"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      {/* NAV */}
+      <nav className={`header__nav ${menuOpen ? "active" : ""}`}>
+        <div
+          className={`nav-item dropdown ${dropdownOpen ? "open" : ""}`}
+          onClick={() => setDropdownOpen(!dropdownOpen)}
+        >
           Property Management
           <span className="arrow">▼</span>
+
           <div className="dropdown-menu">
             <a>The Mashcole Method</a>
             <a>Asset Operation</a>
