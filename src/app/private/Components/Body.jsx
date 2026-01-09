@@ -71,6 +71,123 @@ export default function Body() {
           </div>
         </div>
       </section>
+      
+      {/* STATISTICS SECTION */}
+      <section className="stats-section">
+        <h2>DATA THAT SPEAKS</h2>
+        <div className="stats-grid">
+          <div className="stat-item">
+            <div className="stat-number">375+</div>
+            <div className="stat-label">Properties Managed</div>
+          </div>
+          <div className="stat-item">
+            <div className="stat-number">7,000+</div>
+            <div className="stat-label">Units Managed</div>
+          </div>
+          <div className="stat-item">
+            <div className="stat-number">20+</div>
+            <div className="stat-label">Years of Experience</div>
+          </div>
+          <div className="stat-item">
+            <div className="stat-number">20K+</div>
+            <div className="stat-label">Credit Report A Year</div>
+          </div>
+        </div>
+      </section>
+
+      {/* FEATURED RENTALS */}
+      <section className="featured-section">
+        <div className="featured-header">
+          <h2>FEATURED RENTALS</h2>
+          <p>
+            Explore our most popular rental properties, offering great locations, quality living,
+            <br />and professional management you can count on. <a href="#">SEE ALL</a>
+          </p>
+        </div>
+
+        <div className="search-bar">
+          <input type="text" placeholder="City, Neighborhood, Zip Or Address" />
+          <button className="filters-btn">
+            Filters <span>🎚️</span>
+          </button>
+          <button>🔍 SEARCH</button>
+        </div>
+
+        <div className="rental-cards">
+          <div className="rental-card">
+            <div className="rental-image">
+              <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=600" alt="Rental property" />
+              <div className="rental-badges">
+                <span className="badge new">NEW</span>
+                <span className="badge featured">Featured</span>
+                <span className="badge available">Available</span>
+              </div>
+            </div>
+            <div className="rental-info">
+              <div className="rental-price">$4,250</div>
+              <div className="rental-address">
+                732 E. Santa Clara St.,<br />
+                Ventura, CA 93001
+              </div>
+              <div className="rental-features">
+                <div className="feature">
+                  <span className="feature-icon">🛏️</span> 3
+                </div>
+                <div className="feature">
+                  <span className="feature-icon">🚿</span> 2
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="rental-card">
+            <div className="rental-image">
+              <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=600" alt="Rental property" />
+            </div>
+            <div className="rental-info">
+              <div className="rental-price">$1,695</div>
+              <div className="rental-address">
+                6737 Denny Ave.,<br />
+                North Hollywood, CA 91606
+              </div>
+              <div className="rental-features">
+                <div className="feature">
+                  <span className="feature-icon">🛏️</span> 3
+                </div>
+                <div className="feature">
+                  <span className="feature-icon">🚿</span> 2
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="rental-card">
+            <div className="rental-image">
+              <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600" alt="Rental property" />
+              <div className="rental-badges">
+                <span className="badge new">NEW</span>
+                <span className="badge featured">Featured</span>
+                <span className="badge available">Available</span>
+              </div>
+            </div>
+            <div className="rental-info">
+              <div className="rental-price">$3,183 - $4,250</div>
+              <div className="rental-address">
+                8742 Orion Avenue,<br />
+                North Hills, CA 91343
+              </div>
+              <div className="rental-features">
+                <div className="feature">
+                  <span className="feature-icon">🛏️</span> 3
+                </div>
+                <div className="feature">
+                  <span className="feature-icon">🚿</span> 2
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
     </div>
   );
