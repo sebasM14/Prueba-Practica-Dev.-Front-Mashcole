@@ -1,3 +1,7 @@
+
+import logo from '../../../assets/img/image.png';
+
+
 export default function Body() {
   return (
     <div className="body-container">
@@ -46,32 +50,32 @@ export default function Body() {
         </div>
       </section>
 
-      <section className="bottom-section">
-        <div className="office-card">
-          <h3>Offices In California</h3>
-          <p>📍 26901 Agoura Road, Suite 250, Calabasas, CA 91301</p>
-          <p>📍 3846 E Anaheim St, Long Beach, CA 90804</p>
-          <p>📞 (818) 888-8052</p>
-        </div>
+     <section className="bottom-section">
+  <div className="office-card">
+    <div>
+      <img src={logo} alt="Office" />
+    </div>
+  </div>
 
-        <div className="rentals-card">
-          <div className="rentals-content">
-            <h3>Find Rentals</h3>
-            <p>
-              With more than 7000 units available in the Greater Los Angeles area,
-              we can help you find the right one for you.
-            </p>
-            <button className="btn white">SEE ALL RENTAL LISTINGS</button>
-          </div>
+  <div className="rentals-card">
+    <div className="rentals-content">
+      <h3>Find Rentals</h3>
+      <p>
+        With more than 7000 units available in the Greater Los Angeles area,
+        we can help you find the right one for you.
+      </p>
+      <button className="btn white">SEE ALL RENTAL LISTINGS</button>
+    </div>
 
-          <div className="rentals-images">
-            <img src="https://www.mashcole.com/images/about/office.jpg" />
-            <img src="https://www.mashcole.com/Pictures/large/Bcode/717-01.jpg" />
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGT602CEVMNqf6UIPb7_-RGZ7t8CyfDzQVgA&s" />
-          </div>
-        </div>
-      </section>
-      
+    <div className="rentals-images">
+      <img src="https://www.mashcole.com/images/about/office.jpg" alt="Rental 1" />
+      <img src="https://www.mashcole.com/Pictures/large/Bcode/717-01.jpg" alt="Rental 2" />
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGT602CEVMNqf6UIPb7_-RGZ7t8CyfDzQVgA&s" alt="Rental 3" />
+    </div>
+  </div>
+</section>
+
+
       {/* STATISTICS SECTION */}
       <section className="stats-section">
         <h2>DATA THAT SPEAKS</h2>
