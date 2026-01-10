@@ -1,19 +1,30 @@
-import { useState } from "react";
+import { useState } from 'react';
 
 export default function Header() {
-  const [menuOpen, setMenuOpen] = useState(false);
-  const [dropdownOpen, setDropdownOpen] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [openDropdown, setOpenDropdown] = useState(null);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
+  const toggleDropdown = (dropdown) => {
+    setOpenDropdown(openDropdown === dropdown ? null : dropdown);
+  };
 
   return (
     <header className="header">
       <div className="header__logo">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStH2ydTOrNsyDIqTv_EztmmyhYO43Yt3hlig&s" />
+        <img 
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStH2ydTOrNsyDIqTv_EztmmyhYO43Yt3hlig&s" 
+          alt="Mashcole Property Management Logo"
+        />
       </div>
 
-      {/* HAMBURGER */}
-      <button
-        className={`menu-toggle ${menuOpen ? "open" : ""}`}
-        onClick={() => setMenuOpen(!menuOpen)}
+      {/* Botón hamburguesa para móvil */}
+      <button 
+        className={`menu-toggle ${isMenuOpen ? 'open' : ''}`}
+        onClick={toggleMenu}
         aria-label="Toggle menu"
       >
         <span></span>
@@ -21,15 +32,14 @@ export default function Header() {
         <span></span>
       </button>
 
-      {/* NAV */}
-      <nav className={`header__nav ${menuOpen ? "active" : ""}`}>
-        <div
-          className={`nav-item dropdown ${dropdownOpen ? "open" : ""}`}
-          onClick={() => setDropdownOpen(!dropdownOpen)}
+      {/* Navegación principal */}
+      <nav className={`header__nav ${isMenuOpen ? 'active' : ''}`}>
+        <div 
+          className={`nav-item dropdown ${openDropdown === 'management' ? 'open' : ''}`}
+          onClick={() => toggleDropdown('management')}
         >
           Property Management
           <span className="arrow">▼</span>
-
           <div className="dropdown-menu">
             <a>The Mashcole Method</a>
             <a>Asset Operation</a>

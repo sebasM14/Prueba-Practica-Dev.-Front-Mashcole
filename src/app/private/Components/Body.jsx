@@ -112,9 +112,9 @@ export default function Body() {
         <div className="search-bar">
           <input type="text" placeholder="City, Neighborhood, Zip Or Address" />
           <button className="filters-btn">
-            Filters <span>🎚️</span>
+            Filters <span></span>
           </button>
-          <button>🔍 SEARCH</button>
+          <button> SEARCH</button>
         </div>
 
         <div className="rental-cards">
@@ -239,7 +239,114 @@ export default function Body() {
   </div>
 </section>
 
+
+
+{/* BLOGS SECTION */}
+<section className="blogs-section">
+  <div className="blogs-layout">
+
+    {/* LEFT INFO CARD */}
+    <div className="blogs-info">
+      <h2>BLOGS AND ARTICLES</h2>
+
+      <p>
+        At Mashcole Property Management, Inc. we are dedicated to keeping
+        property owners and residents informed about the latest developments
+        in multi-family insights and efficient property management tips.
+      </p>
+
+      <button className="btn-dark">SEE ALL</button>
     </div>
+
+    {/* BLOG CARDS */}
+    <div className="blogs-cards">
+
+      <article className="blog-card">
+        <img
+          src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=800"
+          alt="North Hollywood"
+        />
+        <div className="blog-overlay">
+          <h3>What Kind of Neighborhood Is North Hollywood?</h3>
+        </div>
+      </article>
+
+      <article className="blog-card">
+        <img
+          src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800"
+          alt="Torrance"
+        />
+        <div className="blog-overlay">
+          <h3>
+            Is Torrance, CA, a Good Place to Live?
+            <br />
+            Uncover What Makes This City Unique
+          </h3>
+        </div>
+      </article>
+
+      <article className="blog-card">
+        <img
+          src="https://images.unsplash.com/photo-1500534623283-312aade485b7?w=800"
+          alt="Bellflower"
+        />
+        <div className="blog-overlay">
+          <h3>Experience the Charm of Bellflower: An Insider’s Perspective</h3>
+        </div>
+      </article>
+
+      <article className="blog-card">
+        <img
+          src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=800"
+          alt="Bakersfield"
+        />
+        <div className="blog-overlay">
+          <h3>
+            From Sunsets to Opportunities: Living the Dream in Bakersfield
+          </h3>
+        </div>
+      </article>
+
+      <article className="blog-card">
+        <img
+          src="https://images.unsplash.com/photo-1520975922284-7b4f0a7c3a83?w=800"
+          alt="Van Nuys"
+        />
+        <div className="blog-overlay">
+          <h3>Unlock the Essence of Living in Van Nuys</h3>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+
+{/* CTA SECTION */}
+<section className="cta-section">
+  <div className="cta-container">
+    <h2>
+      Ready To Experience Stress-Free
+      <br />
+      Property Management?
+    </h2>
+
+    <p>
+      Maximize your rental income with our expert team.
+    </p>
+
+    <button className="cta-button">
+      SCHEDULE YOUR FREE CONSULTATION TODAY
+    </button>
+  </div>
+</section>
+
+
+
+    </div>
+
+
+
 
 
 
